@@ -1,0 +1,123 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    height: auto; /* Let Bootstrap manage the height */
+}
+
+td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc; /* Match Bootstrap's color scheme */
+}
+
+/* Row styles */
+tr {
+    width: 100%; /* Let Bootstrap's table classes manage column widths */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%; /* Set to full width */
+    text-align: center; /* Center the text in the header */
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+}
+
+#hederUl {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#hederLi {
+    margin-right: 20px; /* Add space between menu items */
+}
+
+#hederTekst {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#hederTekst:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Additional Custom Styles */
+.partneriTable {
+    margin-top: 30px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    header {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+        align-items: center;
+    }
+
+    #hederLi {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between stacked items */
+    }
+
+    #hederTekst {
+        font-size: 16px;
+    }
+
+    .partneriTable {
+        margin-top: 20px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .container {
+        margin-top: 15px;
+    }
+
+    .search-form {
+        margin-top: 15px;
+    }
+
+    .input-group {
+        width: 100%; /* Make search input and button full width */
+    }
+
+    .input-group .form-control, 
+    .input-group .btn {
+        height: 45px;
+        font-size: 16px;
+    }
+}
